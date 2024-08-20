@@ -1,7 +1,7 @@
 /* tasneem's task */
 /* just for testing you can remove it when you start working */
 header {
-  height: 80vh;
+  /*  height: 82vh; */
   background-color: #183d82;
 }
 .btns {
@@ -33,7 +33,7 @@ header > .info {
   place-items: center;
   align-items: center;
   color: white;
-  margin-top: 10vh;
+  margin-top: 8vh;
 }
 
 .profile-img > img {
@@ -45,6 +45,37 @@ header > .info {
 header > .linked-in {
   width: min-content;
   align-self: flex-end;
+}
+h1 {
+  font-size: 4em;
+  margin: 20px 0px 10px 0px;
+}
+p {
+  font-size: 1.5em;
+  margin-bottom: 10em;
+}
+.container {
+  display: grid;
+  place-items: center;
+}
+
+/*
+.main {
+  display: grid;
+  place-items: center;
+  width: 75vw;
+} */
+ul {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+  color: #6b6c6c;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+nav {
+  background-color: white;
+  padding: 20px;
 }
 
 @media screen and (max-width: 878px) {
