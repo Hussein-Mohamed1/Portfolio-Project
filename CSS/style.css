@@ -1,0 +1,11 @@
+:root {
+    --text-color : #6e7687;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size:small;
+    position: relative;
+}
