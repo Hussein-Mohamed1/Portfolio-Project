@@ -38,7 +38,7 @@
     align-items: center;
 }
 
-span {
+.card span {
     font-weight: 600;
 }
 
