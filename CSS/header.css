@@ -1,5 +1,51 @@
 /* tasneem's task */
 /* just for testing you can remove it when you start working */
 header {
-    height: 500px;
+  height: 80vh;
+  background-color: #183d82;
+}
+.btns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+header > .btns > button {
+  background-color: #183d82;
+  color: white;
+  border: 1px solid white;
+  font-size: 1em;
+  margin: 40px 10px 0px 0px;
+  letter-spacing: 2px;
+  font-style: 300px;
+}
+.linked-in {
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 1.5em !important;
+  padding: 10px;
+}
+.contact {
+  border-radius: 60px 60px;
+  padding: 10px 15px;
+}
+header > .info {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  color: white;
+  margin-top: 10vh;
+}
+
+.profile-img > img {
+  width: 10dvw;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+header > .linked-in {
+  width: min-content;
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 878px) {
 }
