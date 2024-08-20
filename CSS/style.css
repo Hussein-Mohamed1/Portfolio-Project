@@ -1,12 +1,15 @@
 :root {
-  --text-color: #6e7687;
+    --text-color: #6e7687;
 }
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 body {
-  font-family: "Open Sans", sans-serif;
-  font-size: small;
-  position: relative;
-  margin: 0px; /* for bg to have full width */
+    font-family: "Open Sans", sans-serif;
+    font-size: small;
+    position: relative;
+    margin: 0px;
+    /* for bg to have full width */
 }
