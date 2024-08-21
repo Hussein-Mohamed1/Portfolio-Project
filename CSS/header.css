@@ -1,70 +1,75 @@
 /* tasneem's task */
 /* just for testing you can remove it when you start working */
 header {
-    /*  height: 82vh; */
-    background-color: #183d82;
+  /*  height: 82vh; */
+  background-color: #183d82;
+  position: relative;
 }
 
 .btns {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
 }
 
-header>.btns>button {
-    background-color: #183d82;
-    color: white;
-    border: 1px solid white;
-    font-size: 1em;
-    margin: 40px 10px 0px 0px;
-    letter-spacing: 2px;
-    font-style: 300px;
+header > .btns > button {
+  background-color: #183d82;
+  color: white;
+  border: 1px solid white;
+  font-size: 1em;
+  margin: 40px 10px 0px 0px;
+  letter-spacing: 2px;
+  font-style: 300px;
 }
 
 .linked-in {
-    border-radius: 50%;
-    font-weight: 600;
-    font-size: 1.5em !important;
-    padding: 10px;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 1.5em !important;
+  padding: 10px;
 }
 
 .contact {
-    border-radius: 60px 60px;
-    padding: 10px 15px;
+  border-radius: 60px 60px;
+  padding: 10px 15px;
 }
 
-header>.info {
-    display: grid;
-    place-items: center;
-    align-items: center;
-    color: white;
-    margin-top: 8vh;
+header > .info {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  color: white;
+  margin-top: 8vh;
 }
 
-.profile-img>img {
-    width: 10dvw;
-    border-radius: 50%;
-    border: 3px solid white;
+.profile-img > img {
+  width: 10dvw;
+  border-radius: 50%;
+  border: 3px solid white;
 }
 
-header>.linked-in {
-    width: min-content;
-    align-self: flex-end;
+header > .linked-in {
+  width: min-content;
+  align-self: flex-end;
 }
 
 header h1 {
-    font-size: 4em;
-    margin: 20px 0px 10px 0px;
+  font-size: 4em;
+  margin: 20px 0px 10px 0px;
+}
+header h1,
+p:hover {
+  cursor: pointer;
 }
 
 header p {
-    font-size: 1.5em;
-    margin-bottom: 10em;
+  font-size: 1.5em;
+  margin-bottom: 10em;
 }
 
 .container {
-    display: grid;
-    place-items: center;
+  display: grid;
+  place-items: center;
 }
 
 /*
@@ -73,18 +78,67 @@ header p {
   place-items: center;
   width: 75vw;
 } */
-.container ul {
-    display: flex;
-    /* gap: 1.2rem; */
-    list-style: none;
-    color: #6b6c6c;
-    /* font-size: 1.5em; */
-    letter-spacing: 1px;
+.container .nav-bar ul {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+  position: relative;
+}
+.container .nav-bar ul a {
+  white-space: nowrap;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #6b6c6c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.container .nav-bar li:hover a {
+  color: cornflowerblue;
 }
 
-nav {
-    background-color: white;
-    padding: 20px;
+.container .nav-bar li:before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 3px;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: cornflowerblue;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out 0s;
 }
 
-@media screen and (max-width: 878px) {}
+.container .nav-bar li:hover::before {
+  visibility: visible;
+  width: 15%;
+}
+
+.container nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+.pop-up {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+@media screen and (max-width: 878px) {
+}
