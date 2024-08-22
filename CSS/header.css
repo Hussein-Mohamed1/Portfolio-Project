@@ -19,7 +19,11 @@ header > .btns > button {
   font-size: 1em;
   margin: 40px 10px 0px 0px;
   letter-spacing: 2px;
-  font-style: 300px;
+}
+header > .btns > button:hover {
+  background-color: #d1d8e6;
+  color: black;
+  cursor: pointer;
 }
 
 .linked-in {
@@ -27,6 +31,10 @@ header > .btns > button {
   font-weight: 600;
   font-size: 1.5em !important;
   padding: 10px;
+}
+header a {
+  text-decoration: none;
+  color: white;
 }
 
 .contact {
@@ -64,7 +72,7 @@ p:hover {
 
 header p {
   font-size: 1.5em;
-  margin-bottom: 10em;
+  margin-bottom: 7em;
 }
 
 .container {
@@ -72,21 +80,14 @@ header p {
   place-items: center;
 }
 
-/*
-.main {
-  display: grid;
-  place-items: center;
-  width: 75vw;
-} */
 .container .nav-bar ul {
   display: flex;
   gap: 1.2rem;
   list-style: none;
-  position: relative;
 }
 .container .nav-bar ul li {
   white-space: nowrap;
-  padding: 15px 20px;
+  padding: 15px;
   display: flex;
   align-items: center;
   font-size: 1.3em;
@@ -96,35 +97,24 @@ header p {
   transition: color 0.3s ease;
   cursor: pointer;
 }
-.container .nav-bar li:hover  {
+.container .nav-bar li:hover {
   color: cornflowerblue;
-}
-
-.container .nav-bar li:before {
-  content: "";
-  position: absolute;
-  width: 0px;
-  height: 3px;
-  bottom: 5px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: cornflowerblue;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.container .nav-bar li:hover::before {
-  visibility: visible;
-  width: 15%;
 }
 
 .container nav {
   background-color: white;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  border-radius: 10px 10px 0px 0px;
 }
 
+.nav-bar input,
+.contact-card input {
+  background-color: #f4f4f6;
+  border-radius: 20px;
+  border-width: 0px;
+  padding: 15px;
+  margin-left: 10px;
+}
 .hidden {
   display: none;
 }
@@ -139,6 +129,39 @@ header p {
   border-radius: 10px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
+}
+
+.contact-card input {
+  width: 70%;
+  margin: 0px 20px 0px 0px;
+  border-radius: 10px;
+}
+.contact-card button {
+  background-color: #3957ff;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100px;
+  border-color: transparent;
+  margin-top: 10px;
+}
+
+.contact-card .close-pop-up {
+  position: absolute;
+  left: 87%;
+  top: 0%;
+  width: 40px;
+  cursor: pointer;
+}
+.contact-card h2 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.contact-card {
+  padding: 30px;
+  width: 50dvw;
 }
 
 @media screen and (max-width: 878px) {

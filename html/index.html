@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../CSS/sections.css" />
     <link rel="stylesheet" href="../CSS/header.css" />
     <link rel="stylesheet" href="../CSS/style.css" />
-    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/footer.css" />
     <!-- font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,7 +23,9 @@
   <body>
     <header>
       <div class="btns">
-        <button type="button" class="linked-in">in</button>
+        <button type="button" class="linked-in">
+          <a href="https://www.linkedin.com/">in</a>
+        </button>
         <button type="button" class="contact">Contact Me</button>
       </div>
       <div class="info">
@@ -33,23 +35,39 @@
         <h1>Owner Name</h1>
         <p>Computer Engineer student and Front-end developer</p>
       </div>
+      <div class="container">
+        <nav class="nav-bar">
+          <ul class="header-links">
+            <li name="Highlights">HighLights</li>
+            <li name="all-content">All Content</li>
+            <li>Projects</li>
+            <li>Clients</li>
+            <li>Skills</li>
+            <li>Life style</li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                />
+              </svg>
+              <input type="text" id="search" placeholder="Search..." />
+            </li>
+            <!-- additional slot -->
+          </ul>
+        </nav>
+      </div>
     </header>
-    <div class="container">
-      <nav class="nav-bar">
-        <ul class="header-links">
-          <li name="Highlights">HighLights</li>
-          <li name="all-content">All Content</li>
-          <li>Projects</li>
-          <li>Clients</li>
-          <li>Skills</li>
-          <li>fill-me</li>
-          <!-- additional slot -->
-        </ul>
-      </nav>
-    </div>
+
     <div class="pop-up hidden">
       <button class="close-pop-up">&times;</button>
-      <h1>I'm a modal window 😍</h1>
+      <h2>I'm a modal window 😍</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -59,6 +77,13 @@
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
       </p>
+    </div>
+    <div class="contact-card pop-up hidden">
+      <button class="close-pop-up">&times;</button>
+      <h2>Contact Portfolio owner</h2>
+      <p>Share your thoughts or even inquire about something</p>
+      <input type="email" placeholder="e.g yourname@gmail.com" />
+      <button>Send</button>
     </div>
     <!-- start HighLights section  -->
     <div class="Highlights active">
