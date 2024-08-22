@@ -84,7 +84,7 @@ header p {
   list-style: none;
   position: relative;
 }
-.container .nav-bar ul a {
+.container .nav-bar ul li {
   white-space: nowrap;
   padding: 15px 20px;
   display: flex;
@@ -94,8 +94,9 @@ header p {
   color: #6b6c6c;
   text-decoration: none;
   transition: color 0.3s ease;
+  cursor: pointer;
 }
-.container .nav-bar li:hover a {
+.container .nav-bar li:hover  {
   color: cornflowerblue;
 }
 
