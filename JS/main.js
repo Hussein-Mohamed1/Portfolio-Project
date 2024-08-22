@@ -1,3 +1,4 @@
+"use strict";
 // click in nav par links functionality
 let navlinks = document.querySelectorAll(".header-links li");
 navlinks.forEach((link) => {
@@ -15,15 +16,16 @@ navlinks.forEach((link) => {
   });
 });
 
+/* declaring variables of main page */
 const headerName = document.querySelector("header h1");
 const headerP = document.querySelector("header .info p");
 const popUp = document.querySelector(".pop-up");
 const closeBtn = document.querySelector(".pop-up .close-pop-up");
 const contact = document.querySelector("header .contact");
 const contactPop = document.querySelector(".contact-card");
+
 const displayContact = function () {
   contactPop.classList.remove("hidden");
-  console.log("heeeehhhhh");
 };
 const closeContact = document.querySelector(".contact-card .close-pop-up");
 
