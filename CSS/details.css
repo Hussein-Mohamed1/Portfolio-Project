@@ -1,0 +1,51 @@
+/* tasneem's task */
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+header img {
+  border-radius: 50%;
+  width: 4.5vw;
+  margin: 15px 10px 20px 20px;
+  float: left;
+}
+header h4 {
+  display: inline;
+  line-height: 5;
+}
+header .linkedIn {
+  margin: 25px 40px 0px 0px;
+}
+
+header .linkedIn a {
+  text-decoration: none;
+  color: #505662;
+  border: 0.5px solid rgba(201, 200, 200, 0.731);
+  border-radius: 50%;
+  padding: 7px 10px;
+  font-weight: 600;
+  font-size: 1em;
+  margin-top: 60px;
+}
+.main {
+  margin: 0% 20% 0% 25%;
+}
+.paragraph p {
+  display: inline;
+  margin: 10px;
+}
+.main .add {
+  display: inline;
+}
+div.collection > svg,
+div.collection > p {
+  color: #014fe7;
+}
+div.collection {
+  margin: 30px 0px;
+}
