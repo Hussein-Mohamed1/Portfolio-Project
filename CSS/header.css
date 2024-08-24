@@ -51,7 +51,7 @@ header > .info {
 }
 
 .profile-img > img {
-  width: 10dvw;
+  width: 200px;
   border-radius: 50%;
   border: 3px solid white;
 }
@@ -144,6 +144,7 @@ header p {
   width: 100px;
   border-color: transparent;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .contact-card .close-pop-up {
@@ -165,4 +166,27 @@ header p {
 }
 
 @media screen and (max-width: 878px) {
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  header .container {
+    order: -1;
+  }
+  header .btns {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  header .btns button {
+    margin: 0px 0px 25px 0px;
+  }
+  .container .nav-bar ul li {
+    padding: 0px;
+  }
+  .container .nav-bar ul {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
