@@ -34,13 +34,30 @@ header .linkedIn a {
 }
 .main {
   margin: 0% 20% 0% 25%;
+  width: 60vw;
 }
+
+h1 {
+  font-size: 2.5rem;
+  font-family: Inter, sans-serif;
+}
+
 .paragraph p {
   display: inline;
-  margin: 10px;
+  margin-right: 10px;
+  color: #92949a;
 }
 .main .add {
   display: inline;
+}
+
+.main .article {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-family: Lora, serif;
+}
+.main img {
+  max-width: 60vw;
 }
 div.collection > svg,
 div.collection > p {

@@ -1,85 +1,57 @@
 "use strict";
 /* declaring variables */
 const pageTitle = document.querySelector("head title");
-console.log(pageTitle.textContent);
-const date = document.querySelector(
-  "body > section > div.paragraph > p:nth-child(1)"
-);
-const articleTitle = document.querySelector(
-  "section > div.paragraph > p:nth-child(2)"
-);
+const date = document.querySelector(".date");
 const h1 = document.querySelector("section > h1");
+console.log(h1);
 const mainParagraph = document.querySelector("section > div:nth-child(4) > p");
 const firstImg = document.querySelector("#firstImg");
 const secondImg = document.querySelector("#secondImg");
 
-/* let motherLove;
-$.get("../html/index.html", null, function (text) {
-  motherLove = $(text).find(
-    "div.Highlights.active > div:nth-child(1) > div:nth-child(2) > div > img"
-  );
-  console.log(motherLove);
-}); */
+const handleIndex = function () {
+  function getCard(e) {
+    //get closest card to selected element
+    const card = e.target.closest(".card");
 
-// $.get("../html/index.html", null, function (text) {
-//   // Create a jQuery object with the fetched HTML content
-//   var $htmlContent = $(text);
+    //DOM for card elements
+    const cardDate = card.querySelector("p:last-of-type").innerHTML;
+    const cardTitle = card.querySelector("h2").textContent;
+    const cardParagraph = card.querySelector("p").textContent;
+    console.log(cardParagraph);
+    const cardImg = card.querySelector(".card-img img").src;
 
-//   // Find the <img> elements in the fetched HTML
-//   var $imgElements = $htmlContent.find("body");
+    //saving card elements in local storage
+    localStorage.setItem("cDate", cardDate);
+    localStorage.setItem("cTitle", cardTitle);
+    localStorage.setItem("cParagraph", cardParagraph);
+    localStorage.setItem("imgsrc", cardImg);
 
-//   // Add an event listener to the <img> elements
-//   $imgElements.on("click", function () {
-//     alert("An image was clicked!");
-//   });
-
-//   // If you want to append these images to an existing element on the page
-//   // For example, appending to a container with id="imageContainer"
-//   // $("#imageContainer").append($imgElements);
-// });
-/* may be working
-$.get("../html/index.html", null, function (text) {
-  // Log the fetched HTML content to verify it's being retrieved correctly
-  console.log("Fetched HTML content:", text);
-
-  // Create a jQuery object with the fetched HTML content
-  var $htmlContent = $(text);
-
-  // Find the <img> elements in the fetched HTML
-  var $imgElements = $htmlContent.find("img");
-
-  // Log the found <img> elements to verify they are being selected
-  console.log("Found <img> elements:", $imgElements);
-
-  // Check if any <img> elements were found
-  if ($imgElements.length > 0) {
-    // Add an event listener to the <img> elements
-    $imgElements.on("click", function () {
-      alert("An image was clicked!");
-    });
-
-    // Optionally append these images to an existing element in the DOM
-    // Example: appending to a container with id="imageContainer"
-    // $("#imageContainer").append($imgElements);
-  } else {
-    console.warn("No <img> elements found in the fetched content.");
+    window.open("details.html", "_blank");
   }
-}).fail(function (jqXHR, textStatus, errorThrown) {
-  // Log any errors with the AJAX request
-  console.error("AJAX request failed:", textStatus, errorThrown);
-}); */
 
-/* Articles selectors */
-// const mothersLove = do.querySelector(
-//   "body > div.Highlights.active > div:nth-child(1) > div:nth-child(2) > div > img"
-// );
-/* 
-mothersLove.addEventListener("click", function () {
-  console.log(date);
-  date.textContent = "November 01, 2023";
-  articleTitle.textContent = "PDF at The Australian Women's Weekly";
-}); */
-/* 
-const test = document.querySelector(".main > div.paragraph > p:nth-child(1)");
-test.textContent = "hello there";
- */
+  //selecting elements that will be clickable
+  const imgGroup = document.querySelectorAll(".card .card-img");
+  const h2Group = document.querySelectorAll(".card h2");
+  const iconGroup = document.querySelectorAll(".card .right");
+
+  //adding eventListerners to them
+  imgGroup.forEach((image) => image.addEventListener("click", getCard));
+  h2Group.forEach((heading2) => heading2.addEventListener("click", getCard));
+  iconGroup.forEach((icon) => icon.addEventListener("click", getCard));
+};
+
+const handleDetails = function () {
+  date.innerHTML = localStorage.getItem("cDate");
+  h1.textContent = localStorage.getItem("cTitle");
+  pageTitle.textContent = localStorage.getItem("cTitle");
+  mainParagraph.textContent = localStorage.getItem("cParagraph");
+  firstImg.src = localStorage.getItem("imgsrc");
+};
+
+const currentPage = window.location.pathname;
+console.log(currentPage);
+
+if (currentPage.includes("index.html")) handleIndex();
+else if (currentPage.includes("details.html")) {
+  document.addEventListener("DOMContentLoaded", handleDetails);
+}
