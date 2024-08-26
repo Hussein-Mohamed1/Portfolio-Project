@@ -7,6 +7,8 @@ navlinks.forEach((link) => {
     let sectiontoshow = document.querySelector(
       `.${e.target.getAttribute("name")}`
     );
+    console.log(sectiontoshow);
+    console.log(e);
     if (cursection)
       // can be removed later
       cursection.classList.remove("active");
