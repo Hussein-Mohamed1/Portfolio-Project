@@ -3,7 +3,6 @@
 const pageTitle = document.querySelector("head title");
 const date = document.querySelector(".date");
 const h1 = document.querySelector("section > h1");
-console.log(h1);
 const mainParagraph = document.querySelector("section > div:nth-child(4) > p");
 const firstImg = document.querySelector("#firstImg");
 const secondImg = document.querySelector("#secondImg");
