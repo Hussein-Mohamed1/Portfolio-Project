@@ -1,0 +1,33 @@
+.clients .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  place-items: center;
+}
+
+.clients .grid-container svg {
+  width: 300px;
+  height: 300px;
+  animation: border-play 3s ease-in-out infinite;
+  animation-fill-mode: forwards;
+  border: 10px solid transparent;
+  box-shadow: 10px 0px 20px 0px #576379;
+  padding: 20px;
+  border-radius: 10px;
+}
+@keyframes border-play {
+  0% {
+    box-shadow: 10px 0px 20px 0px #576379;
+  }
+  50% {
+    box-shadow: -10px 0px 20px 0px #576379;
+  }
+  100% {
+  }
+}
+@media screen and (max-width: 878px) {
+  .clients .grid-container {
+    grid-template-columns: 1fr;
+  }
+}

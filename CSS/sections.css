@@ -1,5 +1,7 @@
 .Highlights,
-.all-content {
+.all-content,
+.projects,
+.clients {
   padding: 50px 200px;
   display: none;
 }

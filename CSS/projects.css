@@ -1,0 +1,13 @@
+.projects .card {
+  transition: all 1s ease-out;
+}
+.projects .card:hover {
+  transform: translate(42px, -10px);
+}
+
+.projects svg {
+  margin-right: 7px;
+}
+.projects svg.bi-github {
+  margin-left: 20px;
+}
