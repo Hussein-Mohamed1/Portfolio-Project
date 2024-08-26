@@ -55,3 +55,13 @@ if (currentPage.includes("index.html")) handleIndex();
 else if (currentPage.includes("details.html")) {
   document.addEventListener("DOMContentLoaded", handleDetails);
 }
+
+// handel large paragraph in some images
+
+mainParagraph.addEventListener('click', () => {
+  if (mainParagraph.style.display === 'block') {
+    mainParagraph.style.display = '-webkit-box';
+  } else {
+    mainParagraph.style.display = 'block';
+  }
+})
