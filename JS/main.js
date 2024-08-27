@@ -45,3 +45,27 @@ contact.addEventListener("click", displayContact);
 closeContact.addEventListener("click", function () {
   contactPop.classList.add("hidden");
 });
+
+const frontSkills = document.querySelector(".skills li:nth-child(2)");
+const backSkills = document.querySelector(
+  ".skills > div > ul > li:nth-child(3)"
+);
+const html = document.querySelector(".skills li:nth-child(2) li:nth-child(1)");
+const css = document.querySelector(".skills li:nth-child(2) li:nth-child(2)");
+const js = document.querySelector(".skills li:nth-child(2) li:nth-child(3)");
+
+const node = document.querySelector(".skills li:nth-child(3) li:nth-child(1)");
+const express = document.querySelector(
+  ".skills li:nth-child(3) li:nth-child(2)"
+);
+
+frontSkills.addEventListener("click", function () {
+  html.classList.toggle("hidden");
+  css.classList.toggle("hidden");
+  js.classList.toggle("hidden");
+});
+console.log(backSkills);
+backSkills.addEventListener("click", function () {
+  node.classList.toggle("hidden");
+  express.classList.toggle("hidden");
+});

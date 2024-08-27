@@ -11,3 +11,47 @@
 .projects svg.bi-github {
   margin-left: 20px;
 }
+
+.skills {
+  padding-left: 300px;
+}
+.skills .flex-content {
+  font-size: 30px;
+}
+
+.skills .flex-content ul {
+  list-style: none;
+  width: 50%;
+}
+.skills .flex-content ul > li {
+  margin: 50px 0px;
+  border: 4px solid #006cf1;
+  padding: 20px 12px;
+  border-radius: 10px;
+  box-shadow: 4px 2px 5px slategrey;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  position: relative;
+}
+.skills .flex-content ul > li:hover {
+  transform: translateY(-20px);
+}
+.skills .flex-content ul > li > svg {
+  position: absolute;
+  right: 20px;
+  top: 40%;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 878px) {
+  .skills .flex-content ul {
+    width: max-content;
+  }
+  .skills {
+    padding-left: 0px;
+    display: flex;
+  }
+}
