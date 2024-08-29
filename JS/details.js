@@ -55,11 +55,21 @@ else if (currentPage.includes("details.html")) {
   document.addEventListener("DOMContentLoaded", handleDetails);
   // handel large paragraph in some images
 
-mainParagraph.addEventListener('click', () => {
-  if (mainParagraph.style.display === 'block') {
-    mainParagraph.style.display = '-webkit-box';
-  } else {
-    mainParagraph.style.display = 'block';
-  }
-})
+  mainParagraph.addEventListener('click', () => {
+    if (mainParagraph.style.display === 'block') {
+      mainParagraph.style.display = '-webkit-box';
+    } else {
+      mainParagraph.style.display = 'block';
+    }
+  })
+
+  let link = document.createElement('link');
+
+
+  link.rel = 'icon';
+  link.href = localStorage.getItem("imgsrc");
+
+  document.head.appendChild(link);
 }
+
+
