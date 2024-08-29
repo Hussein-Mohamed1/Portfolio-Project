@@ -19,7 +19,7 @@ header {
 }
 
 header > .btns > button {
-  background-color: #183d82;
+  background-color: transparent;
   color: white;
   border: 1px solid white;
   font-size: 1em;
@@ -125,8 +125,12 @@ header p {
   display: none;
 }
 .pop-up {
+  padding: 30px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
   position: absolute;
-  top: 15%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
@@ -134,8 +138,16 @@ header p {
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
   backdrop-filter: blur(80px);
+  font-size: 22px;
 }
-
+body > div.overlay > div > button {
+  background-color: royalblue;
+  align-self: self-end;
+  border-radius: 50% 10%;
+  border: 2px solid transparent;
+  font-size: 30px;
+  cursor: pointer;
+}
 .contact-card input {
   width: 70%;
   margin: 0px 20px 0px 0px;
@@ -167,7 +179,8 @@ header p {
 
 .contact-card {
   padding: 30px;
-  width: 50dvw;
+  width: 500px;
+  align-items: self-start;
 }
 
 @media screen and (max-width: 878px) {

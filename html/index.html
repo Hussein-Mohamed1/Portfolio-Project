@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../images/icon.jpg" />
+    <link rel="icon" href="../images/titleicon.jpg" />
     <link rel="stylesheet" href="../CSS/all.min.css" />
     <link rel="stylesheet" href="../CSS/sections.css" />
     <link rel="stylesheet" href="../CSS/header.css" />
@@ -44,8 +44,8 @@
             <li name="all-content">All Content</li>
             <li name="projects">Projects</li>
             <li name="clients">Clients</li>
-            <li>Skills</li>
-            <li name = "lifestyle-content" >Life style</li>
+            <li name="skills">Skills</li>
+            <li name="lifestyle-content">Life style</li>
             <li>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -66,218 +66,300 @@
         </nav>
       </div>
     </header>
-
-    <div class="pop-up hidden">
-      <button class="close-pop-up">&times;</button>
-      <h2>I'm a modal window 😍</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
+    <div class="overlay">
+      <div class="pop-up hidden">
+        <button class="close-pop-up">&times;</button>
+        <div class="profile-img">
+          <img src="../images/avatar.jpg" alt="profile image" />
+        </div>
+        <h2>Owner Name</h2>
+        <p>Computer Engineer student and Front-end developer</p>
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-telephone"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+            />
+          </svg>
+          +20123456789
+        </p>
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-github"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+            />
+          </svg>
+          owner@github.com
+        </p>
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-instagram"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+            />
+          </svg>
+          Owner@insta.com
+        </p>
+      </div>
     </div>
     <div class="contact-card pop-up hidden">
       <button class="close-pop-up">&times;</button>
-      <h2>Contact Portfolio owner</h2>
+      <h2>Contact Me</h2>
       <p>Share your thoughts or even inquire about something</p>
       <input type="email" placeholder="e.g yourname@gmail.com" />
       <button>Send</button>
     </div>
-<!-- start HighLights section  -->
-<div class="Highlights active">
-  <div class="section-flex">
-    <div class="card">
-      <div class="card-img">
-        <img src="../images/programming-project-1.jpg" alt="Programming Project" />
+    <!-- start HighLights section  -->
+    <div class="Highlights active">
+      <div class="section-flex">
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="../images/programming-project-1.jpg"
+              alt="Programming Project"
+            />
+          </div>
+          <h2>Exploring the Future of AI in Software Development</h2>
+          <p class="hidden-p">
+            This article delves into how AI is transforming software
+            development, from automating routine tasks to enhancing code quality
+            and debugging processes.
+          </p>
+          <p>
+            <i class="fa-solid fa-tower-broadcast left"></i> July 15, 2024 .
+            Report at <span>AI Developer Journal</span>
+            <i class="fa-solid fa-arrow-up-right-from-square right"></i>
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="../images/programming-project-2.jpeg"
+              class="ml"
+              alt="Web Development"
+            />
+          </div>
+          <h2>Modern Web Development: Best Practices and Tools</h2>
+          <p class="hidden-p">
+            This guide covers the latest best practices in web development,
+            including frameworks, tools, and techniques to create efficient and
+            scalable web applications.
+          </p>
+          <p>
+            <i class="fa-solid fa-globe left"></i> September 10, 2024 . Article
+            at <span>WebDev Today</span>
+          </p>
+        </div>
       </div>
-      <h2>
-        Exploring the Future of AI in Software Development
-      </h2>
-      <p class="hidden-p">
-        This article delves into how AI is transforming software development, from automating routine tasks to enhancing code quality and debugging processes.
-      </p>
-      <p>
-        <i class="fa-solid fa-tower-broadcast left"></i> July 15, 2024 . Report at <span>AI Developer Journal</span>
-        <i class="fa-solid fa-arrow-up-right-from-square right"></i>
-      </p>
-    </div>
-    <div class="card">
-      <div class="card-img">
-        <img src="../images/programming-project-2.jpeg" class="ml" alt="Web Development" />
+      <div class="section-flex">
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="../images/programming-project-3.jpeg"
+              alt="Mobile App Development"
+            />
+          </div>
+          <h2>Mobile App Development: Trends and Innovations</h2>
+          <p class="hidden-p">
+            Discover the latest trends in mobile app development, from
+            cross-platform frameworks to AI-powered apps that enhance user
+            experience.
+          </p>
+          <p>
+            <i class="fa-solid fa-globe left"></i> November 01, 2024 . Journal
+            at <span>Mobile Dev Insights</span>
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="../images/programming-project-4.jpg"
+              alt="Cybersecurity"
+            />
+          </div>
+          <h2>
+            Strengthening Cybersecurity: Essential Practices for Developers
+          </h2>
+          <p class="hidden-p">
+            This article focuses on the critical role of cybersecurity in
+            software development, offering best practices to safeguard
+            applications against threats.
+          </p>
+          <p>
+            <img
+              src="../images/logo3.jpg"
+              style="translate: 0 20%"
+              class="left icon"
+              width="20px"
+              height="20px"
+              alt=""
+            />
+            October 14, 2024 . Article at <span>Security Weekly</span>
+          </p>
+        </div>
       </div>
-      <h2>Modern Web Development: Best Practices and Tools</h2>
-      <p class="hidden-p">
-        This guide covers the latest best practices in web development, including frameworks, tools, and techniques to create efficient and scalable web applications.
-      </p>
-      <p>
-        <i class="fa-solid fa-globe left"></i> September 10, 2024 . Article at <span>WebDev Today</span>
-      </p>
-    </div>
-  </div>
-  <div class="section-flex">
-    <div class="card">
-      <div class="card-img">
-        <img src="../images/programming-project-3.jpeg" alt="Mobile App Development" />
+      <div class="section-flex">
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="../images/programming-project-5.jpg"
+              alt="Cloud Computing"
+            />
+          </div>
+          <h2>Cloud Computing in 2024: What Developers Need to Know</h2>
+          <p class="hidden-p">
+            An overview of the latest advancements in cloud computing, and how
+            developers can leverage these technologies for more robust and
+            scalable applications.
+          </p>
+          <p>
+            <img
+              src="../images/logo3.jpg"
+              style="translate: 0 20%"
+              class="left icon"
+              width="20px"
+              height="20px"
+              alt=""
+            />
+            August 10, 2024 . Report at <span>Cloud Tech Journal</span>
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="../images/programming-project-6.jpg" alt="Data Science" />
+          </div>
+          <h2>Data Science: Tools and Techniques for 2024</h2>
+          <p class="hidden-p">
+            This article explores the most effective tools and techniques in
+            data science, helping developers and data scientists maximize the
+            value of big data.
+          </p>
+          <p>
+            <i class="fa-solid fa-globe left"></i> December 01, 2024 . PDF at
+            <span>Data Science Weekly</span>
+          </p>
+        </div>
       </div>
-      <h2>Mobile App Development: Trends and Innovations</h2>
-      <p class="hidden-p">
-        Discover the latest trends in mobile app development, from cross-platform frameworks to AI-powered apps that enhance user experience.
-      </p>
-      <p>
-        <i class="fa-solid fa-globe left"></i> November 01, 2024 . Journal at <span>Mobile Dev Insights</span>
-      </p>
     </div>
-    <div class="card">
-      <div class="card-img">
-        <img src="../images/programming-project-4.jpg" alt="Cybersecurity" />
-      </div>
-      <h2>
-        Strengthening Cybersecurity: Essential Practices for Developers
-      </h2>
-      <p class="hidden-p">
-        This article focuses on the critical role of cybersecurity in software development, offering best practices to safeguard applications against threats.
-      </p>
-      <p>
-        <img
-          src="../images/logo3.jpg"
-          style="translate: 0 20%"
-          class="left icon"
-          width="20px"
-          height="20px"
-          alt=""
-        />
-        October 14, 2024 . Article at <span>Security Weekly</span>
-      </p>
-    </div>
-  </div>
-  <div class="section-flex">
-    <div class="card">
-      <div class="card-img">
-        <img src="../images/programming-project-5.jpg" alt="Cloud Computing" />
-      </div>
-      <h2>
-        Cloud Computing in 2024: What Developers Need to Know
-      </h2>
-      <p class="hidden-p">
-        An overview of the latest advancements in cloud computing, and how developers can leverage these technologies for more robust and scalable applications.
-      </p>
-      <p>
-        <img
-          src="../images/logo3.jpg"
-          style="translate: 0 20%"
-          class="left icon"
-          width="20px"
-          height="20px"
-          alt=""
-        />
-        August 10, 2024 . Report at <span>Cloud Tech Journal</span>
-      </p>
-    </div>
-    <div class="card">
-      <div class="card-img">
-        <img src="../images/programming-project-6.jpg" alt="Data Science" />
-      </div>
-      <h2>Data Science: Tools and Techniques for 2024</h2>
-      <p class="hidden-p">
-        This article explores the most effective tools and techniques in data science, helping developers and data scientists maximize the value of big data.
-      </p>
-      <p>
-        <i class="fa-solid fa-globe left"></i> December 01, 2024 . PDF at <span>Data Science Weekly</span>
-      </p>
-    </div>
-  </div>
-</div>
-<!-- end HighLights section  -->
+    <!-- end HighLights section  -->
 
-
-<!-- start All content section  -->
-<div class="all-content">
-  <div class="section-flex">
-    <div class="card">
-      <div class="card-img">
-        <img src="../images/programming-1.png" alt="Python Basics" />
+    <!-- start All content section  -->
+    <div class="all-content">
+      <div class="section-flex">
+        <div class="card">
+          <div class="card-img">
+            <img src="../images/programming-1.png" alt="Python Basics" />
+          </div>
+          <h2>Getting Started with Python</h2>
+          <p class="hidden-p">
+            Learn the fundamentals of Python programming, a versatile language
+            used in web development, data analysis, artificial intelligence, and
+            more.
+          </p>
+          <p>
+            <i class="fa-solid fa-globe left"></i> July 15, 2024 . Tutorial at
+            <span>Codecademy</span>
+            <i class="fa-solid fa-arrow-up-right-from-square right"></i>
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="../images/programming-2.jpg" alt="JavaScript ES6" />
+          </div>
+          <h2>Understanding JavaScript ES6</h2>
+          <p class="hidden-p">
+            Explore the features of ES6, the latest version of JavaScript, and
+            how it improves upon previous iterations with modern syntax and
+            capabilities.
+          </p>
+          <p>
+            <i class="fa-solid fa-globe left"></i> August 01, 2024 . Guide at
+            <span>MDN Web Docs</span>
+            <i class="fa-solid fa-arrow-up-right-from-square right"></i>
+          </p>
+        </div>
       </div>
-      <h2>Getting Started with Python</h2>
-      <p class="hidden-p">
-        Learn the fundamentals of Python programming, a versatile language used in web development, data analysis, artificial intelligence, and more.
-      </p>
-      <p>
-        <i class="fa-solid fa-globe left"></i> July 15, 2024 . Tutorial at <span>Codecademy</span>
-        <i class="fa-solid fa-arrow-up-right-from-square right"></i>
-      </p>
+      <div class="section-flex">
+        <div class="card">
+          <div class="card-img">
+            <img src="../images/programming-3.png" alt="React JS" />
+          </div>
+          <h2>Building Components with React</h2>
+          <p class="hidden-p">
+            Learn how to build reusable UI components with React, a popular
+            JavaScript library for creating dynamic and responsive web
+            applications.
+          </p>
+          <p>
+            <i class="fa-solid fa-globe left"></i> September 12, 2024 . Course
+            at <span>Udemy</span>
+            <i class="fa-solid fa-arrow-up-right-from-square right"></i>
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="../images/programming-4.png" alt="Node.js" />
+          </div>
+          <h2>Server-side Development with Node.js</h2>
+          <p class="hidden-p">
+            Dive into Node.js, a powerful platform for building scalable network
+            applications using JavaScript on the server side.
+          </p>
+          <p>
+            <i class="fa-solid fa-globe left"></i> October 10, 2024 . Workshop
+            at <span>Pluralsight</span>
+            <i class="fa-solid fa-arrow-up-right-from-square right"></i>
+          </p>
+        </div>
+      </div>
+      <div class="section-flex">
+        <div class="card">
+          <div class="card-img">
+            <img src="../images/programming-5.jpg" alt="MongoDB" />
+          </div>
+          <h2>Mastering MongoDB for Modern Applications</h2>
+          <p class="hidden-p">
+            Discover how to efficiently use MongoDB, a powerful NoSQL database,
+            for building scalable and flexible data-driven applications.
+          </p>
+          <p>
+            <i class="fa-solid fa-globe left"></i> June 30, 2024 . Article at
+            <span>MongoDB University</span>
+            <i class="fa-solid fa-arrow-up-right-from-square right"></i>
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="../images/programming-6.avif" alt="Version Control Git" />
+          </div>
+          <h2>Version Control with Git</h2>
+          <p class="hidden-p">
+            Get started with Git, the popular version control system, to manage
+            your codebase efficiently and collaborate with others on projects.
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="card">
-      <div class="card-img">
-        <img src="../images/programming-2.jpg" alt="JavaScript ES6" />
-      </div>
-      <h2>Understanding JavaScript ES6</h2>
-      <p class="hidden-p">
-        Explore the features of ES6, the latest version of JavaScript, and how it improves upon previous iterations with modern syntax and capabilities.
-      </p>
-      <p>
-        <i class="fa-solid fa-globe left"></i> August 01, 2024 . Guide at <span>MDN Web Docs</span>
-        <i class="fa-solid fa-arrow-up-right-from-square right"></i>
-      </p>
-    </div>
-  </div>
-  <div class="section-flex">
-    <div class="card">
-      <div class="card-img">
-        <img src="../images/programming-3.png" alt="React JS" />
-      </div>
-      <h2>Building Components with React</h2>
-      <p class="hidden-p">
-        Learn how to build reusable UI components with React, a popular JavaScript library for creating dynamic and responsive web applications.
-      </p>
-      <p>
-        <i class="fa-solid fa-globe left"></i> September 12, 2024 . Course at <span>Udemy</span>
-        <i class="fa-solid fa-arrow-up-right-from-square right"></i>
-      </p>
-    </div>
-    <div class="card">
-      <div class="card-img">
-        <img src="../images/programming-4.png" alt="Node.js" />
-      </div>
-      <h2>Server-side Development with Node.js</h2>
-      <p class="hidden-p">
-        Dive into Node.js, a powerful platform for building scalable network applications using JavaScript on the server side.
-      </p>
-      <p>
-        <i class="fa-solid fa-globe left"></i> October 10, 2024 . Workshop at <span>Pluralsight</span>
-        <i class="fa-solid fa-arrow-up-right-from-square right"></i>
-      </p>
-    </div>
-  </div>
-  <div class="section-flex">
-    <div class="card">
-      <div class="card-img">
-        <img src="../images/programming-5.jpg" alt="MongoDB" />
-      </div>
-      <h2>Mastering MongoDB for Modern Applications</h2>
-      <p class="hidden-p">
-        Discover how to efficiently use MongoDB, a powerful NoSQL database, for building scalable and flexible data-driven applications.
-      </p>
-      <p>
-        <i class="fa-solid fa-globe left"></i> June 30, 2024 . Article at <span>MongoDB University</span>
-        <i class="fa-solid fa-arrow-up-right-from-square right"></i>
-      </p>
-    </div>    
-    <div class="card">
-      <div class="card-img">
-        <img src="../images/programming-6.avif" alt="Version Control Git" />
-      </div>
-      <h2>Version Control with Git</h2>
-      <p class="hidden-p">
-        Get started with Git, the popular version control system, to manage your codebase efficiently and collaborate with others on projects.
-      </p>
-    </div>
-  </div>
-</div>
-<!-- end All content section  -->
+    <!-- end All content section  -->
 
     <!-- start Lifestyle section  -->
     <div class="lifestyle-content">
@@ -288,10 +370,12 @@
           </div>
           <h2>Embracing a Healthy Eating Lifestyle</h2>
           <p class="hidden-p">
-            Explore the benefits of a balanced diet and discover tips for incorporating nutritious foods into your daily routine.
+            Explore the benefits of a balanced diet and discover tips for
+            incorporating nutritious foods into your daily routine.
           </p>
           <p>
-            <i class="fa-solid fa-globe left"></i> July 15, 2024 . Article at <span>Healthline</span>
+            <i class="fa-solid fa-globe left"></i> July 15, 2024 . Article at
+            <span>Healthline</span>
             <i class="fa-solid fa-arrow-up-right-from-square right"></i>
           </p>
         </div>
@@ -301,10 +385,12 @@
           </div>
           <h2>Integrating Mindfulness into Your Daily Life</h2>
           <p class="hidden-p">
-            Learn how mindfulness and meditation can help reduce stress and improve overall well-being in your everyday life.
+            Learn how mindfulness and meditation can help reduce stress and
+            improve overall well-being in your everyday life.
           </p>
           <p>
-            <i class="fa-solid fa-globe left"></i> August 01, 2024 . Guide at <span>Mindful.org</span>
+            <i class="fa-solid fa-globe left"></i> August 01, 2024 . Guide at
+            <span>Mindful.org</span>
             <i class="fa-solid fa-arrow-up-right-from-square right"></i>
           </p>
         </div>
@@ -316,10 +402,12 @@
           </div>
           <h2>Effective Fitness Routines for Busy Lives</h2>
           <p class="hidden-p">
-            Discover efficient workout routines that fit into a busy schedule, helping you stay active and healthy without sacrificing time.
+            Discover efficient workout routines that fit into a busy schedule,
+            helping you stay active and healthy without sacrificing time.
           </p>
           <p>
-            <i class="fa-solid fa-globe left"></i> September 12, 2024 . Course at <span>Fitness Blender</span>
+            <i class="fa-solid fa-globe left"></i> September 12, 2024 . Course
+            at <span>Fitness Blender</span>
             <i class="fa-solid fa-arrow-up-right-from-square right"></i>
           </p>
         </div>
@@ -329,10 +417,13 @@
           </div>
           <h2>Exploring Unique Travel Destinations</h2>
           <p class="hidden-p">
-            Embark on exciting adventures and discover off-the-beaten-path travel destinations that offer unique experiences and cultural insights.
+            Embark on exciting adventures and discover off-the-beaten-path
+            travel destinations that offer unique experiences and cultural
+            insights.
           </p>
           <p>
-            <i class="fa-solid fa-globe left"></i> October 10, 2024 . Article at <span>Travel + Leisure</span>
+            <i class="fa-solid fa-globe left"></i> October 10, 2024 . Article at
+            <span>Travel + Leisure</span>
             <i class="fa-solid fa-arrow-up-right-from-square right"></i>
           </p>
         </div>
@@ -344,10 +435,13 @@
           </div>
           <h2>Tips for Organizing Your Home</h2>
           <p class="hidden-p">
-            Get practical advice for decluttering and organizing your living space to create a more functional and aesthetically pleasing home environment.
+            Get practical advice for decluttering and organizing your living
+            space to create a more functional and aesthetically pleasing home
+            environment.
           </p>
           <p>
-            <i class="fa-solid fa-globe left"></i> November 05, 2024 . Article at <span>Good Housekeeping</span>
+            <i class="fa-solid fa-globe left"></i> November 05, 2024 . Article
+            at <span>Good Housekeeping</span>
             <i class="fa-solid fa-arrow-up-right-from-square right"></i>
           </p>
         </div>
@@ -357,10 +451,13 @@
           </div>
           <h2>Adopting a Sustainable Living Lifestyle</h2>
           <p class="hidden-p">
-            Learn how to make eco-friendly choices and reduce your carbon footprint to live a more sustainable and environmentally conscious life.
+            Learn how to make eco-friendly choices and reduce your carbon
+            footprint to live a more sustainable and environmentally conscious
+            life.
           </p>
           <p>
-            <i class="fa-solid fa-globe left"></i> December 01, 2024 . Article at <span>Green Living</span>
+            <i class="fa-solid fa-globe left"></i> December 01, 2024 . Article
+            at <span>Green Living</span>
             <i class="fa-solid fa-arrow-up-right-from-square right"></i>
           </p>
         </div>
@@ -784,7 +881,56 @@
         </div>
       </div>
     </div>
-
+    <div class="skills">
+      <div class="flex-content">
+        <ul>
+          <li>Problem Solving</li>
+          <li>
+            Front End
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-caret-down-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+              />
+            </svg>
+            <ul>
+              <li class="hidden">HTML</li>
+              <li class="hidden">CSS</li>
+              <li class="hidden">JS</li>
+            </ul>
+          </li>
+          <li>
+            Back End
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-caret-down-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+              />
+            </svg>
+            <ul>
+              <li class="hidden">Node js</li>
+              <li class="hidden">Express</li>
+            </ul>
+          </li>
+          <li>Data Structure</li>
+          <li>Version Control</li>
+          <li>Time managment</li>
+          <li>Communication skills</li>
+        </ul>
+      </div>
+    </div>
 <!-- start footer -->
 <footer>
   <div class="foot1">
@@ -833,7 +979,6 @@
   </div>
 </footer>
 <!-- end footer -->
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- jquery may be deleted -->
     <script src="../Js/main.js"></script>

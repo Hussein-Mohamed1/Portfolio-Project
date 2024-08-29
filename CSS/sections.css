@@ -5,7 +5,8 @@ html {
 .all-content,
 .projects,
 .clients,
-.lifestyle-content {
+.lifestyle-content,
+.skills {
   padding: 50px 200px;
   display: none;
 }
@@ -13,10 +14,11 @@ html {
 .section-flex {
   display: flex;
   gap: 100px;
+  justify-content: center;
 }
 
 .section-flex .card {
-  width: 50%;
+  width: 35%;
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
@@ -38,7 +40,6 @@ html {
   height: 190px;
   border-radius: 10px;
 }
-
 
 .card p {
   color: var(--text-color);
@@ -70,7 +71,7 @@ html {
 }
 
 .card:hover h2, .card:hover p {
-  color: #007bff; 
+  color: cornflowerblue; 
 }
 
 
@@ -92,9 +93,8 @@ html {
 
 /* media queries  */
 @media (max-width: 1200px) {
-
   .Highlights,
-  .all-content ,
+  .all-content,
   .lifestyle-content {
     padding: 50px 50px;
   }
@@ -106,7 +106,7 @@ html {
   }
 
   .Highlights,
-  .all-content ,
+  .all-content,
   .lifestyle-content {
     padding: 50px 20px;
   }
