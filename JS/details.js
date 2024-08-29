@@ -63,3 +63,13 @@ mainParagraph.addEventListener('click', () => {
   }
 })
 }
+
+// add icon 
+let link = document.createElement('link');
+
+
+link.rel = 'icon';
+link.href = localStorage.getItem("imgsrc");
+
+document.head.appendChild(link);
+

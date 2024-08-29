@@ -1,4 +1,7 @@
 /* tasneem's task */
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
 }
