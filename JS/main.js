@@ -7,8 +7,6 @@ navlinks.forEach((link) => {
     let sectiontoshow = document.querySelector(
       `.${e.target.getAttribute("name")}`
     );
-    console.log(sectiontoshow);
-    console.log(e);
     if (cursection)
       // can be removed later
       cursection.classList.remove("active");
@@ -64,7 +62,6 @@ frontSkills.addEventListener("click", function () {
   css.classList.toggle("hidden");
   js.classList.toggle("hidden");
 });
-console.log(backSkills);
 backSkills.addEventListener("click", function () {
   node.classList.toggle("hidden");
   express.classList.toggle("hidden");
