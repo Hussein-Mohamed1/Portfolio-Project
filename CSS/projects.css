@@ -13,16 +13,18 @@
   margin-left: 20px;
 }
 
-.skills {
-  padding-left: 300px;
-}
+
 .skills .flex-content {
   font-size: 30px;
+  display: flex;
+  justify-content: center;
 }
-
+.skills .flex-content > ul {
+  padding: 0;
+}
 .skills .flex-content ul {
   list-style: none;
-  width: 50%;
+  width: fit-content;
 }
 .skills .flex-content ul > li {
   margin: 50px 0px;
@@ -53,11 +55,5 @@
   }
   .projects .card {
     width: 100%;
-  }
-  .skills .flex-content ul {
-    width: max-content;
-  }
-  .skills {
-    padding-left: 0px;
   }
 }

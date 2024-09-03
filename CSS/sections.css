@@ -95,7 +95,10 @@ html {
 @media (max-width: 1200px) {
   .Highlights,
   .all-content,
-  .lifestyle-content {
+  .lifestyle-content,
+  .projects,
+  .skills , 
+  .clients {
     padding: 50px 50px;
   }
 }
@@ -111,14 +114,11 @@ html {
     padding: 50px 20px;
   }
 }
-
-@media (max-width: 850px) {
-  p span {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    flex: 1;
-  }
+p span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
 }
 
 .card .hidden-p {

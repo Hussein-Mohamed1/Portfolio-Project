@@ -16,7 +16,6 @@ const handleIndex = function () {
     const cardDate = card.querySelector("p:last-of-type").innerHTML;
     const cardTitle = card.querySelector("h2").textContent;
     const cardParagraph = card.querySelector("p").textContent;
-    console.log(cardParagraph);
     const cardImg = card.querySelector(".card-img img").src;
 
     //saving card elements in local storage
@@ -48,7 +47,6 @@ const handleDetails = function () {
 };
 
 const currentPage = window.location.pathname;
-console.log(currentPage);
 
 if (currentPage.includes("index.html")) handleIndex();
 else if (currentPage.includes("details.html")) {
