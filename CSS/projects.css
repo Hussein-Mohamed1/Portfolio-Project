@@ -47,11 +47,16 @@
 }
 
 @media (max-width: 878px) {
+  .projects .section-flex {
+    flex-direction: column;
+  }
+  .projects .card {
+    width: 100%;
+  }
   .skills .flex-content ul {
     width: max-content;
   }
   .skills {
     padding-left: 0px;
-    display: flex;
   }
 }
