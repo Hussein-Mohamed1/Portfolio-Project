@@ -19,7 +19,9 @@
   display: flex;
   justify-content: center;
 }
-
+.skills .flex-content > ul {
+  padding: 0;
+}
 .skills .flex-content ul {
   list-style: none;
   width: fit-content;
@@ -53,8 +55,5 @@
   }
   .projects .card {
     width: 100%;
-  }
-  .skills .flex-content ul {
-    width: max-content;
   }
 }
