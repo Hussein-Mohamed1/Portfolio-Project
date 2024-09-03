@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .Highlights,
 .all-content,
 .projects,
@@ -17,11 +20,19 @@
 .section-flex .card {
   width: 35%;
   margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .section-flex .card-img {
   background-color: #f8f8f8;
   border-radius: 10px;
+    width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
 }
 
 .section-flex .card img:not(.icon) {
@@ -45,6 +56,24 @@
 .card span {
   font-weight: 600;
 }
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover .card-img img {
+  opacity: 0.8;
+}
+
+.card h2, .card p {
+  transition: color 0.3s ease;
+}
+
+.card:hover h2, .card:hover p {
+  color: cornflowerblue; 
+}
+
 
 .left {
   margin-right: 10px;
