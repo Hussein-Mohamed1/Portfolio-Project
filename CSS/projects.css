@@ -1,8 +1,9 @@
 .projects .card {
-  transition: all 1s ease-out;
+  transition: all 0.3s ease-out;
 }
 .projects .card:hover {
-  transform: translate(42px, -10px);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .projects svg {
