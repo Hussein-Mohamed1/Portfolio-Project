@@ -24,7 +24,7 @@ const handleIndex = function () {
     localStorage.setItem("cParagraph", cardParagraph);
     localStorage.setItem("imgsrc", cardImg);
 
-    window.open("details.html", "_blank");
+    window.location("details.html", "_blank");
   }
 
   //selecting elements that will be clickable
@@ -49,7 +49,7 @@ const handleDetails = function () {
 const currentPage = window.location.pathname;
 
 if (currentPage.includes("index.html")) handleIndex();
-else if (currentPage.includes("details.html")) {
+if (currentPage.includes("details.html")) {
   document.addEventListener("DOMContentLoaded", handleDetails);
   // handel large paragraph in some images
 
