@@ -24,7 +24,7 @@ const handleIndex = function () {
     localStorage.setItem("cParagraph", cardParagraph);
     localStorage.setItem("imgsrc", cardImg);
 
-    window.location("details.html", "_blank");
+    window.open("../details.html", "_blank");
   }
 
   //selecting elements that will be clickable
